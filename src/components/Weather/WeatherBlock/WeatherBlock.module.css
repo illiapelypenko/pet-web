@@ -1,0 +1,48 @@
+@value colors: "styles/colors.css";
+@value primary, fontColor from colors;
+
+.container {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: primary;
+    font-size: 12px;
+    cursor: pointer;
+    color: fontColor;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 24px;
+}
+
+.block {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cityName {
+    /*font-size: 24px;*/
+}
+
+.temperatureBlock {
+    composes: block;
+}
+
+.windBlock {
+    composes: block;
+}
+
+.star {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

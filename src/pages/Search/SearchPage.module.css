@@ -1,0 +1,19 @@
+@value devices: "styles/devices.css";
+@value phone, tablet from devices;
+
+.pageContent {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.latestSearch {
+    text-decoration: underline;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+@media phone {
+    .latestWeather {
+        margin: auto;
+    }
+}

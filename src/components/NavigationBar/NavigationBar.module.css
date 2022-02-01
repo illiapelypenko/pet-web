@@ -1,0 +1,20 @@
+@value colors: "styles/colors.css";
+@value fontColor, blackOpacity from colors;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.navLink {
+    padding: 10px;
+    color: fontColor;
+    text-decoration: underline;
+}
+
+.navLink:hover {
+     background-color: blackOpacity;
+ }

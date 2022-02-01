@@ -5,7 +5,7 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "airbnb",
+    "react-app",
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/prettier",
@@ -37,11 +37,14 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }]
   },
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "typescript": {
+        "extensions": [".ts", ".tsx"]
+      }
     }
   }
 }
