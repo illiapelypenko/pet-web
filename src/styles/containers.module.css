@@ -1,0 +1,20 @@
+@value devices: "styles/devices.css";
+@value colors: "styles/colors.css";
+@value phone from devices;
+@value pageBackground from colors;
+
+.bigPadding {
+    padding: 20px 50px;
+}
+
+.pageContent {
+    composes: bigPadding;
+    background-color: pageBackground;
+    flex-grow: 1;
+}
+
+@media phone {
+    .bigPadding {
+        padding: 10px 10px;
+    }
+}

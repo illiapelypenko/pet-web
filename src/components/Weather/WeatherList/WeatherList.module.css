@@ -1,0 +1,15 @@
+@value devices: "styles/devices.css";
+@value phone, tablet from devices;
+
+.list {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media phone {
+    .list {
+        justify-content: center;
+    }
+}

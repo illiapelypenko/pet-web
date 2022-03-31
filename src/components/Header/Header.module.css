@@ -1,0 +1,32 @@
+@value colors: "styles/colors.css";
+@value devices: "styles/devices.css";
+@value fontColor from colors;
+@value phone, tablet from devices;
+
+.container {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    composes: bigPadding from "styles/containers.module.css";
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    z-index: 1;
+    gap: 10px;
+}
+
+.logo {
+    color: fontColor;
+}
+
+.currentWeather {
+    display: flex;
+    gap: 5px;
+}
+
+@media phone {
+    .container {
+        justify-content: center;
+    }
+}

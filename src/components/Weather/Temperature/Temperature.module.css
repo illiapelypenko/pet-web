@@ -1,0 +1,13 @@
+.container {
+    /*vertical-align: baseline;*/
+    height: fit-content;
+}
+
+.temperature {
+    /*vertical-align: baseline;*/
+}
+
+.celsius {
+    vertical-align: super;
+    font-size: 0.5em;
+}
